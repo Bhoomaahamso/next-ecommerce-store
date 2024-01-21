@@ -8,12 +8,12 @@ import { useEffect, useState } from "react";
 
 const Page = () => {
   const [isMounted, setIsMounted] = useState(false);
-  const cart = useCart();
-
+  
   useEffect(() => {
     setIsMounted(true);
   }, []);
-
+  
+  const cart = useCart();
   if (!isMounted) return null;
 
   return (
