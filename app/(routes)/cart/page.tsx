@@ -6,7 +6,7 @@ import Summary from "@/components/Summary";
 import useCart from "@/hooks/use-cart";
 import { useEffect, useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [isMounted, setIsMounted] = useState(false);
   const cart = useCart();
 
@@ -39,4 +39,4 @@ const page = () => {
     </div>
   );
 };
-export default page;
+export default Page;
