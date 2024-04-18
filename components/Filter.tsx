@@ -44,8 +44,8 @@ const Filter: React.FC<IFilter> = ({ data, name, valueKey }) => {
         {data.map((filter) => (
           <div key={filter.id} className="flex items-center">
             <Button
-              className={`rounded-md text-sm text-gray-800 p-2 bg-[#525454] border border-gray-300 ${
-                selectedValue === filter.id && "!bg-black !text-white"
+              className={`rounded-md text-sm p-2 border border-gray-300 ${
+                selectedValue === filter.id ? "bg-black !text-white" : "text-gray-800 !bg-[#454545]"
               }`}
               onClick={() => onClick(filter.id)}
             >
